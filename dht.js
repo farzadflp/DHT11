@@ -1,6 +1,6 @@
 var sensorLib = require('node-dht-sensor');
 
-sensorLib.initialize(22, 12); //#A
+sensorLib.initialize(11, 12); //#A
 var interval = setInterval(function () { //#B
   read();
 }, 2000);
@@ -17,7 +17,7 @@ process.on('SIGINT', function () {
   process.exit();
 });
 
-//#A 22 is for DHT22/AM2302, 12 is the GPIO we connect to on the Pi
+//#A 11 is for DHT11, 12 is the GPIO we connect to on the Pi
 //#B create an interval to read the values every 2 seconds
 //#C read the sensor values
 //#D readout contains two values: temperature and humidity
