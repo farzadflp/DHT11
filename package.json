@@ -1,12 +1,9 @@
 {
   "name": "wot-book-gpio",
   "description": "Examples for the Web of Things Book",
-  "author": "Dominique Guinard <dom@guinard.org>",
-  "author": "Vlad Trifa <vladounet@gmail.com>",
-  "repository" : "https://github.com/farzadflp/WoT.git",
   "dependencies": {
-    "onoff": "^1.0.3",
-    "node-dht-sensor": "^0.0.8"
+    "onoff": "latest",
+    "node-dht-sensor": "latest"
   },
   "engine": "node >= 0.12.0"
 }
