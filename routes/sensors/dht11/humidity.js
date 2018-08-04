@@ -1,14 +1,13 @@
-var sensorLib = require('node-dht-sensor');
+var express = require('express');
 var router = express.Router();
 var dhtSensor = require('./dht');
-sensorLib.initialize(11, 12);
 
 router.get('/', function (req, resp) {
     var humidity = dhtSensor.readout.humidity.toFixed(2);
     resp.send({
         status: 'success',
         data: {
-            temperature: humidity
+            humidity: humidity
         }
     }).catch(error => {
         res.send({

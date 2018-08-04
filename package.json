@@ -2,11 +2,9 @@
   "name": "wot-book-gpio",
   "description": "Examples for the Web of Things Book",
   "dependencies": {
-    "onoff": "latest",
+    "express": "latest",
+    "onoff":"latest",
     "node-dht-sensor": "latest"
   },
   "engine": "node >= 0.12.0"
 }
-
-    
-
